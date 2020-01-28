@@ -42,7 +42,7 @@ a {
 
 .barra {
   box-shadow: 1px 2px 3px #dadada;
-  background: #0c5494;
+  background: #024f8a;
 }
 
 .barra .flex {
@@ -93,19 +93,21 @@ a {
 .main .menu-main {
   -webkit-box-flex: 0;
           flex: 0 0 calc(30% - 1rem);
-  border: 1px solid red;
-  padding: 1rem;
+  border: 1px solid #f88f06;
+  background: #024f8a;
+  padding: 0.5rem;
 }
 
 .main .menu-main ul {
   list-style: none;
   border: 1px solid orange;
+  background: #fff;
 }
 
 .main .menu-main ul li {
   padding: 1rem 0;
   text-align: center;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #f88f06;
 }
 
 .main .menu-main ul::last-child {

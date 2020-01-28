@@ -2,17 +2,19 @@
     margin-top: 5rem;
     .menu-main{
         flex: 0 0 calc(30% - 1rem);
-        border: 1px solid red;
-        padding: 1rem;
+        border: 1px solid $orange;
+        background: $blue;
+        padding: .5rem;
 
         ul{
             list-style: none;
             border: 1px solid orange;
+            background: $white;
 
             li{
                 padding: 1rem 0;
                 text-align: center;
-                border-bottom: 1px solid red;
+                border-bottom: 1px solid $orange;
             }
 
             &::last-child{
