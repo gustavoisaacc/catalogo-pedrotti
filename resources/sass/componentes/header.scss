@@ -1,0 +1,48 @@
+.barra{
+    box-shadow: 1px 2px 3px #dadada;
+    background: #0c5494;
+    .flex{
+        padding: 1rem;
+    }
+
+    .logo{
+        background: orange;
+        border-radius: 1rem 0;
+        padding: 1rem ;
+        box-shadow: -1px 1px 3px 1px grey;
+
+        .orange{
+            color: $white;
+        }
+       
+        .yellow{
+            border-radius: 1rem 0 1rem 0;
+            padding: .5rem ;
+            
+        }
+    }
+
+    .navegacio{
+        align-self:center;
+
+        a{
+            margin-right: 1rem;
+            background: orange;
+            padding: 1rem;
+            border-radius: .3rem;
+            box-shadow: -1px 1px 1px 1px grey;
+
+            &:hover{
+                color: $white;
+                box-shadow: -1px 1px 3px 1px #0c5494;
+                
+            }
+
+        }
+
+        &:last-child{
+               margin: 0;
+            }
+    }
+
+}

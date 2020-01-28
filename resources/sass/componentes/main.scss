@@ -1,0 +1,31 @@
+.main{
+    margin-top: 5rem;
+    .menu-main{
+        flex: 0 0 calc(30% - 1rem);
+        border: 1px solid red;
+        padding: 1rem;
+
+        ul{
+            list-style: none;
+            border: 1px solid orange;
+
+            li{
+                padding: 1rem 0;
+                text-align: center;
+                border-bottom: 1px solid red;
+            }
+
+            &::last-child{
+                border-bottom: none;
+            }
+        }
+    }
+
+    .secction{
+        width: 70%;
+        
+        fieldset{
+            flex: 0 0 calc(30% - 1rem);
+        }
+    }
+}

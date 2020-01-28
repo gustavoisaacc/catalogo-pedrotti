@@ -1,0 +1,139 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.orange {
+  background: orange;
+}
+
+.yellow {
+  background: yellow;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.barra {
+  box-shadow: 1px 2px 3px #dadada;
+  background: #0c5494;
+}
+
+.barra .flex {
+  padding: 1rem;
+}
+
+.barra .logo {
+  background: orange;
+  border-radius: 1rem 0;
+  padding: 1rem;
+  box-shadow: -1px 1px 3px 1px grey;
+}
+
+.barra .logo .orange {
+  color: #fff;
+}
+
+.barra .logo .yellow {
+  border-radius: 1rem 0 1rem 0;
+  padding: 0.5rem;
+}
+
+.barra .navegacio {
+  align-self: center;
+}
+
+.barra .navegacio a {
+  margin-right: 1rem;
+  background: orange;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: -1px 1px 1px 1px grey;
+}
+
+.barra .navegacio a:hover {
+  color: #fff;
+  box-shadow: -1px 1px 3px 1px #0c5494;
+}
+
+.barra .navegacio:last-child {
+  margin: 0;
+}
+
+.main {
+  margin-top: 5rem;
+}
+
+.main .menu-main {
+  -webkit-box-flex: 0;
+          flex: 0 0 calc(30% - 1rem);
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.main .menu-main ul {
+  list-style: none;
+  border: 1px solid orange;
+}
+
+.main .menu-main ul li {
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+
+.main .menu-main ul::last-child {
+  border-bottom: none;
+}
+
+.main .secction {
+  width: 70%;
+}
+
+.main .secction fieldset {
+  -webkit-box-flex: 0;
+          flex: 0 0 calc(30% - 1rem);
+}
+
+.seccion-productos legend {
+  border: 1px solid gray;
+  background: orange;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.seccion-productos ul {
+  list-style: none;
+  margin-left: 0.5rem;
+}
+
+.seccion-productos ul li {
+  padding: 0.5rem 0;
+}
+

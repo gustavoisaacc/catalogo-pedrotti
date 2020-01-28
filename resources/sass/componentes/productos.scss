@@ -1,0 +1,18 @@
+.seccion-productos{
+    legend{
+        border: 1px solid gray;
+        background: orange;
+        padding: .5rem 1rem;
+        color: $white;
+    }
+
+    ul{
+        list-style: none;
+        margin-left: .5rem;
+
+        li{
+            padding: .5rem 0;
+
+        }
+    }
+}
