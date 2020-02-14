@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/pages/index', function(){
-    return view('pages/index');
-});
+
+Route::resource('/pages', 'MarcaController');

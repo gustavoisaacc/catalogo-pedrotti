@@ -2,7 +2,7 @@
 
 @section('content')
 
-<main class="main flex container">
+<main class="main flex">
 
     <nav class="menu-main">
         <ul>
@@ -15,12 +15,27 @@
     </nav>
 
     <div class="secction flex">
+    @foreach($marcas as $marca)
 
-        @component('shared.seccion-productos')
-        @endcomponent
-        
-    </div>
-	
+        <fieldset class="seccion-productos">
+            
+            <legend>{{$marca->nombre_marca}}</legend>
+           
+            @foreach($marca->productos as $producto)
+            <ul>
+                <li style="border: 1px solid red; padding: 5rem 1rem; background: #000"><img src="" alt=""></li>
+                <li><span>Producto:</span> {{$producto['nombre-producto']}}</li>
+                <li><span>Descripsion:</span> {{$producto['descripsion-prducto']}}</li>
+                <li><span>Precio:</span> ${{$producto->preio}}</li>
+     
+            </ul>
+            @endforeach
+                
+        </fieldset>
+    @endforeach
+
+       
+    
 </main>
 
 @endsection

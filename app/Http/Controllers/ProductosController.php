@@ -7,9 +7,5 @@ use App\Productos;
 
 class ProductosController extends Controller
 {
-    public function index(){
-        $productos = Productos::All();
-
-        return view('pages/index', compact('productos'));
-    }
+    
 }

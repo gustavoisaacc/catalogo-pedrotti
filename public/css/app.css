@@ -41,8 +41,9 @@ a {
 }
 
 .barra {
-  box-shadow: 1px 2px 3px #dadada;
-  background: #024f8a;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #1c3643e0), color-stop(25%, #273b47c9), to(#1e5372));
+  background: linear-gradient(90deg, #1c3643e0 0, #273b47c9 25%, #1e5372);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .barra .flex {
@@ -54,6 +55,11 @@ a {
   border-radius: 1rem 0;
   padding: 1rem;
   box-shadow: -1px 1px 3px 1px grey;
+}
+
+.barra .logo a {
+  text-decoration: none;
+  color: #000;
 }
 
 .barra .logo .orange {
@@ -74,7 +80,7 @@ a {
   background: orange;
   padding: 1rem;
   border-radius: 0.3rem;
-  box-shadow: -1px 1px 1px 1px grey;
+  box-shadow: -1px 1px 1px 1px #ffffff;
 }
 
 .barra .navegacio a:hover {
@@ -86,28 +92,29 @@ a {
   margin: 0;
 }
 
-.main {
-  margin-top: 5rem;
-}
-
 .main .menu-main {
   -webkit-box-flex: 0;
-          flex: 0 0 calc(30% - 1rem);
-  border: 1px solid #f88f06;
-  background: #024f8a;
-  padding: 0.5rem;
+          flex: 0 0 calc(20% - 1rem);
+  background: #f88f06;
+  height: 100vh;
 }
 
 .main .menu-main ul {
   list-style: none;
-  border: 1px solid orange;
-  background: #fff;
 }
 
 .main .menu-main ul li {
   padding: 1rem 0;
   text-align: center;
-  border-bottom: 1px solid #f88f06;
+  border-bottom: 1px solid #ffffff8f;
+}
+
+.main .menu-main ul li a {
+  color: #fff;
+}
+
+.main .menu-main ul li a:hover {
+  color: #000;
 }
 
 .main .menu-main ul::last-child {
@@ -115,7 +122,7 @@ a {
 }
 
 .main .secction {
-  width: 70%;
+  width: 80%;
 }
 
 .main .secction fieldset {
@@ -123,11 +130,18 @@ a {
           flex: 0 0 calc(30% - 1rem);
 }
 
+.seccion-productos {
+  border: 1px solid red;
+  height: 30rem;
+  margin-top: 3rem;
+}
+
 .seccion-productos legend {
   border: 1px solid gray;
   background: orange;
   padding: 0.5rem 1rem;
   color: #fff;
+  width: 50%;
 }
 
 .seccion-productos ul {

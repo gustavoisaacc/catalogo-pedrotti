@@ -1,20 +1,25 @@
 .main{
-    margin-top: 5rem;
     .menu-main{
-        flex: 0 0 calc(30% - 1rem);
-        border: 1px solid $orange;
-        background: $blue;
-        padding: .5rem;
+        flex: 0 0 calc(20% - 1rem);
+        background: $orange;
+        height: 100vh;
+       
 
         ul{
             list-style: none;
-            border: 1px solid orange;
-            background: $white;
 
             li{
                 padding: 1rem 0;
                 text-align: center;
-                border-bottom: 1px solid $orange;
+                border-bottom: 1px solid #ffffff8f;
+                
+                a{
+                    color: $white;
+                    
+                    &:hover{
+                        color: $blak;
+                    }
+                } 
             }
 
             &::last-child{
@@ -24,7 +29,7 @@
     }
 
     .secction{
-        width: 70%;
+        width: 80%;
         
         fieldset{
             flex: 0 0 calc(30% - 1rem);
