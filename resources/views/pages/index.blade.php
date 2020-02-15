@@ -25,6 +25,7 @@
             <ul>
                 <li style="border: 1px solid red; padding: 5rem 1rem; background: #000"><img src="" alt=""></li>
                 <li><span>Producto:</span> {{$producto['nombre-producto']}}</li>
+                <li><span>Producto:</span> {{$producto->sabor}}</li>
                 <li><span>Descripsion:</span> {{$producto['descripsion-prducto']}}</li>
                 <li><span>Precio:</span> ${{$producto->preio}}</li>
      
