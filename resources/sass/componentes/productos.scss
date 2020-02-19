@@ -1,22 +1,28 @@
 .seccion-productos{
     border: 1px solid red;
-    height: 30rem;
     margin-top: 3rem;
+    width: 100%;
+
     legend{
         border: 1px solid gray;
         background: orange;
         padding: .5rem 1rem;
         color: $white;
-        width: 50%;
     }
-
+    
     ul{
         list-style: none;
-        margin-left: .5rem;
+        margin: 50px;
 
         li{
             padding: .5rem 0;
 
+
+            img{
+                width: 100px;
+                height: 150px;
+                background: red;
+            }
         }
     }
 }

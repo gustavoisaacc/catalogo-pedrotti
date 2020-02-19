@@ -11,6 +11,6 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('admin.home');
-    $router->resource('marcas', MarcaController::class);
-    $router->resource('productos', ProductoController::class);
+    $router->resource('marcas', MarcasController::class);
+    $router->resource('productos', ProductosController::class);
 });

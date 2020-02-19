@@ -29,10 +29,11 @@
     }
 
     .secction{
+        padding: 0 1rem;
         width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
         
-        fieldset{
-            flex: 0 0 calc(30% - 1rem);
-        }
     }
 }
