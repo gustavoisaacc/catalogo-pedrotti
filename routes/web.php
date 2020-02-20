@@ -12,5 +12,12 @@
 */
 
 
+Route::resource('/', 'MarcaController');
 
-Route::resource('/pages', 'MarcaController');
+Route::get('/nosotros', function(){
+    return view('pages.nosotros');
+});
+
+Route::get('/contactanos', function(){
+    return view('pages.contactanos');
+});
