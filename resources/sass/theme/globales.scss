@@ -32,7 +32,16 @@ body{
     background: yellow;
 }
 
+.none{
+    display: block;
+    @media (min-width: 768px) {
+        display: none;
+        
+    }
+}
+
 a{
     text-decoration: none;
     color: #000;
 }
+

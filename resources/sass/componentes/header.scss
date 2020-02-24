@@ -29,6 +29,11 @@
 
     .navegacio{
         align-self:center;
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
 
         a{
             margin-right: 1rem;
@@ -49,4 +54,22 @@
             }
     }
 
+}
+
+/*menu movil*/
+
+.button{
+    background: none;
+    border: none;
+
+    div{
+        width: 30px;
+        height: 5px;
+        background: black;
+        margin-bottom: .5rem;
+    }
+
+    @media (min-width: 768px) {
+            display: none;
+        }
 }

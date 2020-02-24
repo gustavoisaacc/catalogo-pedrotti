@@ -1,8 +1,18 @@
 .main{
     .menu-main{
-        flex: 0 0 calc(20% - 1rem);
-        background: $orange;
+        width: 90%;
+        background: #f88f06;
         height: 100vh;
+        margin-left: -100%;
+
+        @media (min-width: 768px) {
+            width: 20%;
+            background: $orange;
+            height: 100vh;
+            margin-left: 0%;
+            
+        }
+       
        
 
         ul{
@@ -32,8 +42,28 @@
         padding: 0 1rem;
         width: 80%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         grid-gap: 1rem;
         
+        @media (min-width: 446px) {
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+
+        @media (min-width: 776px) {
+            grid-template-columns: repeat(3,1fr);
+            
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(4,1fr);
+            
+        }
     }
+}
+
+
+.fixd{
+    position: fixed;
+    margin-left: 0% !important;
 }
