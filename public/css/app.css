@@ -132,15 +132,14 @@ a {
 .main .menu-main {
   width: 90%;
   background: #f88f06;
-  height: 100vh;
   margin-left: -100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (min-width: 768px) {
   .main .menu-main {
     width: 20%;
-    background: #f88f06;
-    height: 100vh;
     margin-left: 0%;
   }
 }
@@ -173,6 +172,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 446px) {
@@ -195,6 +195,7 @@ a {
 
 .fixd {
   position: fixed;
+  height: 100vh;
   margin-left: 0% !important;
 }
 
@@ -221,8 +222,8 @@ a {
 }
 
 .seccion-productos ul li img {
-  width: 100px;
-  height: 150px;
+  width: 100%;
+  height: 200px;
   background: red;
 }
 
