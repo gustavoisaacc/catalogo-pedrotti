@@ -30,7 +30,7 @@
             <legend>{{$marca->nombre_marca}}</legend>
 
              <ul class="productos">
-                 <li><img src="{{ asset('app/'.$producto->image) }}" alt="Imagen del producto"></li>
+                 <li><img src="{{ asset('storage/uploads/'.$producto->image) }}" alt="Imagen del producto"></li>
                  <li><span>Producto:</span> {{$producto['nombre-producto']}}</li>
                  <li><span>Producto:</span> {{$producto->sabor}}</li>
                  <li><span>Descripsion:</span> {{$producto['descripsion-producto']}}</li>

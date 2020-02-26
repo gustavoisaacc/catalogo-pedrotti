@@ -76,8 +76,10 @@ class ProductosController extends AdminController
         $form->text('sabor', __('Sabor'));
         $form->textarea('descripsion-producto', __('Descripsion producto'));
         $form->decimal('precio', __('Precio'));
+
         $form->image('image', __('Image'));
 
         return $form;
+
     }
 }
